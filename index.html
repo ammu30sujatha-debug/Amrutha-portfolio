@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="theme-color" content="#202124">
+  <meta name="description" content="Amrutha R — BCA student and aspiring software developer. Explore interactive skills, education, experience, projects and achievements.">
+
+  <title>Amrutha R | Interactive Developer Portfolio</title>
+
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Preserve the existing JavaScript files and loading order -->
+  <script src="data.js" defer></script>
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Amrutha R home">
+      Amrutha R<span></span>
+    </a>
+
+    <button
+      class="menu-toggle"
+      id="menuToggle"
+      aria-label="Open navigation"
+      aria-expanded="false"
+      aria-controls="navLinks"
+      type="button"
+    >
+      ☰
+    </button>
+
+    <nav class="nav-links" id="navLinks" aria-label="Main navigation">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Journey</a>
+      <a href="#projects">Projects</a>
+      <a href="#certificates">Certificates</a>
+      <a href="#contact" class="nav-contact">
+        Contact <span>↗</span>
+      </a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero section" id="home">
+      <div class="hero-copy reveal">
+        <p class="eyebrow">
+          <span class="status-dot"></span>
+          BCA STUDENT · ASPIRING SOFTWARE DEVELOPER
+        </p>
+
+        <h1>
+          Turning curiosity<br>
+          into <span>technology.</span>
+        </h1>
+
+        <p class="hero-description">
+          Hi, I'm Amrutha R. I'm a BCA student who enjoys exploring
+          technology, building practical projects, and continuously
+          learning how software can solve real-world problems.
+        </p>
+
+        <div class="hero-actions">
+          <a class="button button-primary" href="assets/resume.pdf" download>
+            Download Resume <span>↗</span>
+          </a>
+
+          <a class="button button-secondary" href="#projects">
+            Explore My Projects <span>↓</span>
+          </a>
+        </div>
+
+        <div class="social-links" aria-label="Social links">
+          <a
+            href="https://github.com/ammu30sujatha-debug"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Visit GitHub profile"
+            data-profile-link="github"
+          >GH</a>
+
+          <a
+            href="https://www.linkedin.com/in/amrutha-r-3596103b9/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Visit LinkedIn profile"
+            data-profile-link="linkedin"
+          >in</a>
+
+          <a
+            href="mailto:ammu30sujatha@gmail.com"
+            aria-label="Send email"
+          >✉</a>
+        </div>
+
+        <div class="hero-highlights">
+          <span>
+            <span class="highlight-dot"></span>
+            Building practical projects
+          </span>
+          <span>
+            <span class="highlight-dot"></span>
+            Always learning
+          </span>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal">
+        <div class="visual-orbit orbit-one"></div>
+        <div class="visual-orbit orbit-two"></div>
+
+        <div class="portrait-frame">
+          <img
+            src="assets/profile.svg"
+            alt="Amrutha R profile illustration"
+            class="portrait"
+          >
+        </div>
+
+        <div class="floating-note note-top">
+          <span class="note-icon">✦</span>
+          <span>
+            <b>Curious mind</b>
+            <small>Learn something new</small>
+          </span>
+        </div>
+
+        <div class="floating-note note-bottom">
+          <span class="note-icon note-blue">⌘</span>
+          <span>
+            <b>Developer in progress</b>
+            <small>Build · Learn · Improve</small>
+          </span>
+        </div>
+
+        <div class="hero-code-label">
+          <span class="code-dot"></span>
+          PORTFOLIO / 2026
+        </div>
+      </div>
+
+      <a class="scroll-cue" href="#about">
+        <span></span> SCROLL TO EXPLORE
+      </a>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section about-section" id="about">
+      <div class="section-heading reveal">
+        <p class="eyebrow">A LITTLE ABOUT ME</p>
+
+        <h2>
+          Learning today.<br>
+          <span>Building for tomorrow.</span>
+        </h2>
+      </div>
+
+      <div class="about-content reveal">
+        <p>
+          I'm pursuing a Bachelor of Computer Applications at SJES College
+          of Management Studies. I'm interested in software development,
+          data, cybersecurity, and emerging technologies. I enjoy learning
+          by doing, collaborating with others, and improving my skills
+          through hands-on projects.
+        </p>
+
+        <div class="quick-facts">
+          <div>
+            <strong>BCA</strong>
+            <span>Current degree</span>
+          </div>
+
+          <div>
+            <strong>2027</strong>
+            <span>Expected graduation</span>
+          </div>
+
+          <div>
+            <strong>5</strong>
+            <span>Languages spoken</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- INTERACTIVE SKILLS -->
+    <section class="section skills-section" id="skills">
+      <div class="section-heading reveal">
+        <p class="eyebrow">WHAT I'M LEARNING</p>
+
+        <h2>
+          Skills & <span>interests</span>
+        </h2>
+
+        <p class="section-intro">
+          Explore my growing toolkit. Select a skill to discover
+          what I'm learning and how I apply it.
+        </p>
+      </div>
+
+      <!--
+        IMPORTANT:
+        script.js and data.js continue to populate this container.
+        The single-open-card interaction will be implemented in
+        the matching JavaScript and CSS.
+      -->
+      <div
+        class="skills-grid skill-deck"
+        id="skillsGrid"
+        aria-label="Interactive skills and interests"
+      ></div>
+
+      <p class="skills-hint">
+        <span aria-hidden="true">✦</span>
+        Select a skill to explore it. Open another to continue.
+      </p>
+    </section>
+
+    <!-- EDUCATION AND EXPERIENCE ROADMAP -->
+    <section
+      class="section experience-section journey-section"
+      id="experience"
+    >
+      <div class="section-heading reveal">
+        <p class="eyebrow">EVERY STEP TELLS A STORY</p>
+
+        <h2>
+          My journey & <span>milestones</span>
+        </h2>
+
+        <p class="section-intro">
+          From education to hands-on experience, each milestone
+          represents something I've learned along the way.
+          Select a milestone to discover its story.
+        </p>
+      </div>
+
+      <!-- Roadmap introduction -->
+      <div class="roadmap-intro reveal">
+        <div class="roadmap-intro-icon" aria-hidden="true">✦</div>
+
+        <div>
+          <h3>One journey. Many discoveries.</h3>
+          <p>
+            Follow the road through my education, practical training,
+            projects, and future aspirations.
+          </p>
+        </div>
+      </div>
+
+      <!--
+        Preserve the original timeline ID.
+        Existing timeline items will continue to be generated by
+        script.js. The winding-road layout will be styled separately.
+      -->
+      <div class="roadmap-viewport">
+        <div
+          class="timeline winding-roadmap"
+          id="timeline"
+          aria-label="Education and experience milestones"
+        ></div>
+      </div>
+
+      <p class="roadmap-hint">
+        <span aria-hidden="true">↗</span>
+        Select a milestone to view its details and pictures.
+      </p>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section projects-section" id="projects">
+      <div class="section-heading reveal">
+        <p class="eyebrow">BUILT WITH CURIOSITY</p>
+
+        <h2>
+          My featured <span>projects</span>
+        </h2>
+
+        <p class="section-intro">
+          Practical work that reflects my learning journey.
+          Explore the live application or visit the source code.
+        </p>
+      </div>
+
+      <!-- FEATURED LIVE STAS PROJECT -->
+      <article class="featured-project reveal">
+        <div class="featured-project-top">
+          <span class="project-label">FEATURED PROJECT</span>
+
+          <span class="live-status">
+            <span class="status-dot"></span>
+            LIVE WEBSITE
+          </span>
+        </div>
+
+        <div class="featured-project-content">
+          <div class="featured-project-copy">
+            <p class="eyebrow">01 / STOCK ANALYSIS</p>
+
+            <h3>STAS — Stock Technical Analysis System</h3>
+
+            <p>
+              A web-based stock analysis application that uses market data
+              to calculate technical indicators and present stock insights.
+              It combines a Flask backend, a PostgreSQL database, and an
+              interactive dashboard.
+            </p>
+
+            <div class="project-tags">
+              <span>Python</span>
+              <span>Flask</span>
+              <span>PostgreSQL</span>
+              <span>SQLAlchemy</span>
+              <span>yfinance</span>
+            </div>
+
+            <div class="project-actions">
+              <a
+                class="button button-primary"
+                href="https://stas-6mi4.onrender.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Visit Live Website <span>↗</span>
+              </a>
+
+              <a
+                class="button button-secondary"
+                href="https://github.com/ammu30sujatha-debug"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                GitHub Profile <span>↗</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="featured-project-visual" aria-hidden="true">
+            <div class="terminal-window">
+              <div class="terminal-bar">
+                <span></span>
+                <span></span>
+                <span></span>
+                <small>STAS / DASHBOARD</small>
+              </div>
+
+              <div class="terminal-body">
+                <p class="terminal-muted">STOCK ANALYSIS SYSTEM</p>
+
+                <div class="terminal-chart">
+                  <span></span><span></span><span></span>
+                  <span></span><span></span><span></span>
+                  <span></span><span></span><span></span>
+                  <span></span><span></span><span></span>
+                </div>
+
+                <div class="terminal-footer">
+                  <span>MARKET DATA</span>
+                  <strong>ANALYSIS</strong>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Additional projects from data.js -->
+      <div class="project-grid" id="projectGrid"></div>
+
+      <p class="project-maintenance-note">
+        More projects can be added by updating <code>data.js</code>.
+      </p>
+    </section>
+
+    <!-- CERTIFICATES -->
+    <section
+      class="section certificates-section"
+      id="certificates"
+    >
+      <div class="section-heading reveal">
+        <p class="eyebrow">PROOF OF LEARNING</p>
+
+        <h2>
+          Certificates & <span>achievements</span>
+        </h2>
+
+        <p class="section-intro">
+          This section will grow as I complete courses, workshops,
+          and professional learning programs.
+        </p>
+      </div>
+
+      <div class="certificate-grid" id="certificateGrid"></div>
+
+      <p class="certificate-note">
+        <span>✦</span>
+        New certificates will be added here as I complete them.
+      </p>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section contact-section" id="contact">
+      <div class="contact-card reveal">
+        <p class="eyebrow">LET'S CONNECT</p>
+
+        <h2>
+          Have an opportunity<br>
+          or an idea? <span>Say hello.</span>
+        </h2>
+
+        <p>
+          I'm open to learning opportunities, internships,
+          and meaningful collaborations.
+        </p>
+
+        <a
+          class="button button-primary"
+          href="mailto:ammu30sujatha@gmail.com"
+        >
+          Email me <span>↗</span>
+        </a>
+      </div>
+
+      <div class="contact-details reveal">
+        <div>
+          <span>Email</span>
+          <a href="mailto:ammu30sujatha@gmail.com">
+            ammu30sujatha@gmail.com
+          </a>
+        </div>
+
+        <div>
+          <span>GitHub</span>
+          <a
+            href="https://github.com/ammu30sujatha-debug"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            github.com/ammu30sujatha-debug ↗
+          </a>
+        </div>
+
+        <div>
+          <span>LinkedIn</span>
+          <a
+            href="https://www.linkedin.com/in/amrutha-r-3596103b9/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Visit LinkedIn profile ↗
+          </a>
+        </div>
+
+        <div>
+          <span>Location</span>
+          <p>India</p>
+        </div>
+
+        <div>
+          <span>Languages</span>
+          <p>English · Hindi · Telugu · Tamil · Kannada</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <a class="brand" href="#home">
+      Amrutha.R<span></span>
+    </a>
+
+    <p>Designed with curiosity by Amrutha R.</p>
+
+    <a href="#home" class="back-top">
+      Back to top ↑
+    </a>
+  </footer>
+</body>
+</html>
